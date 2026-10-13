@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Getting Repo files') {
             steps {
-                git branch: "main", credentialsId: 'Login-gitgub', url: "${https://github.com/ShimaaOmar5/Python-app-using-Jenkins-Docker-.git}"
+                git branch: "main", credentialsId: 'Login-gitgub', url: "${REPO_URL}"
             }
         }
 
